@@ -25,5 +25,6 @@ function showOnlineQ(idx,opts){onlineCur=DATA[idx];$('onlineQ').textContent=f(t(
 function handleNet(m){if(m.type==='q'){onlineRound=m.round;onlineScore=m.score;showOnlineQ(m.idx,m.opts)}if(m.type==='a'){onlineScore=m.score;$('os1').textContent=onlineScore[isHost?0:1];$('os2').textContent=onlineScore[isHost?1:0];if(isHost){onlineRound++;setTimeout(onlineNext,900)}}}
 const oldApply=apply;apply=function(){oldApply();$('multiTitle').textContent=t('multi');$('sameTitle').textContent=t('same');$('sameDesc').textContent=t('samedesc');$('onlineTitle').textContent=t('online');$('onlineDesc').textContent=t('onlinedesc');$('startSame').textContent=t('start');$('safeNote').textContent=t('safe');$('hostBtn').textContent=t('create');$('joinBtn').textContent=t('join');$('copyBtn').textContent=t('copy');$('applyBtn').textContent=t('connect')};
 apply();hud();newMatch();
-</script></body></html>
-room-fix.jsscript>
+</script>
+  
+./room-fix-v2.js?v=2script> </body></html>
